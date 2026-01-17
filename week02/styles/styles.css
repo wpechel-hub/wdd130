@@ -1,0 +1,61 @@
+/* Regras para o Nav */
+nav {
+    background-color: #003366;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Regra para o Main */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Regra para o H1 */
+h1 {
+    color: #003366;
+}
+
+/* Regra para a imagem de perfil no Main */
+main img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #333;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5 );
+}
+
+/* Regra para o Aside */
+aside {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Regra para a imagem no Aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Regra para parágrafos */
+p {
+    padding: 0;
+}
+
+/* Regra para o Footer */
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+}
