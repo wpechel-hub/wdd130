@@ -1,18 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML Structure</title>
 
-    <meta name="description" content="WDD 130 home page by Willian Pechel.">
+
+    <meta name="description" content="WDD 130 home page by Willian Pechel. This page serves as the course home page for WDD 130.">
     <meta name="author" content="Willian Pechel">
 
+  
     <link rel="stylesheet" href="styles/styles.css">
+
+    <style>
+      
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        
+        main img {
+            width: 150px;
+            height: auto;
+        }
+
+       
+        aside {
+            width: 300px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+      
+        aside img {
+            width: 200px;
+            height: auto;
+        }
+
+    
+        p {
+            padding: 0;
+        }
+
+    
+        footer {
+            margin-top: 20px;
+            border-top: 1px solid #333;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
-
     <main>
-        <img src="week02/images/basic-logo.png" width="130" <p></p>
+       
+        <img src="week02/images/basic-logo.png" alt="Basic Logo" width="130">
+        
         <ul>
             <li>
                 <a href="https://governor.utah.gov">
@@ -25,12 +73,12 @@
                 </a>
             </li>
         </ul>
-        </p>
     </main>
 
+  
     <aside>
         <h2>Utah</h2>
-        <img src="week02/images/utah.jpg" width="200">
+        <img src="week02/images/utah.jpg" alt="Utah Landscape" width="200">
         <p>
             Utah is a state in the United States.
             It is known for nature and mountains.
@@ -42,5 +90,4 @@
     </footer>
 
 </body>
-
 </html>
