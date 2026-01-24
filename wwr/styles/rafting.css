@@ -120,7 +120,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: var(--accent1-color);
+    color: var(--accent2-color);
 }
 
 footer {
