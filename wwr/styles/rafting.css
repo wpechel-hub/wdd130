@@ -7,6 +7,40 @@
     --body-font: 'Helvetica', sans-serif;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.adventure-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.adventure-container figure {
+    text-align: center;
+    margin: 0;
+}
+
+.adventure-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +82,11 @@ article {
     width: 32px;
     height: auto;
     margin: 0 5px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
 
 .hero {
