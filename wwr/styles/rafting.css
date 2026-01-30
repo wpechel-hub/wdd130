@@ -7,40 +7,6 @@
     --body-font: 'Helvetica', sans-serif;
 }
 
-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-.adventure-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-.adventure-container figure {
-    text-align: center;
-    margin: 0;
-}
-
-.adventure-container img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -66,29 +32,48 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+/* Header e Navegação */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 10px 0;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 32px;
+header img {
+    width: 150px;
     height: auto;
-    margin: 0 5px;
 }
 
-.socialmedia {
+header nav {
     display: flex;
-    gap: 10px;
+    background-color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-left: 20px;
+    overflow: hidden;
 }
 
+header nav a {
+    flex: 1;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    border-right: 1px solid #444;
+}
+
+header nav a:last-child {
+    border-right: none;
+}
+
+header nav a:hover {
+    background-color: #f0f0f0;
+    color: var(--accent2-color);
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     margin: 20px 0;
@@ -128,44 +113,51 @@ h1 {
     border: 2px solid var(--accent2-color);
 }
 
-.hero article::after {
-    content: "";
-    display: table;
-    clear: both;
+/* Seções e Conteúdo */
+section,
+article {
+    margin: 16px 0;
+    padding: 8px;
 }
 
-header {
+.adventure-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-header img {
-    width: 150px;
+.adventure-container figure {
+    text-align: center;
+    margin: 0;
+    flex: 1;
+}
+
+.adventure-container img {
+    width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
-header nav p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
-}
-
-header nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-header nav a:hover {
-    color: var(--accent2-color);
-}
-
+/* Footer e Social Media */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
     border-top: 1px solid #ccc;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: auto;
 }
