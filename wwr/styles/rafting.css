@@ -160,3 +160,167 @@ footer {
     width: 32px;
     height: auto;
 }
+
+.contact-page {
+    padding: 2rem 0;
+}
+
+.contact-page h1 {
+    position: static;
+    background-color: transparent;
+    color: var(--primary-color);
+    opacity: 1;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.company-info {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.company-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+fieldset legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    gap: 0.5rem;
+}
+
+fieldset label input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+.checkbox {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+.contact-form button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: var(--accent1-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: var(--primary-color);
+}
+
+.employees {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.employees h2 {
+    margin-bottom: 1.5rem;
+}
+
+.employee-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.employee-cards figure {
+    flex: 1;
+}
+
+.employee-cards img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--accent2-color);
+}
+
+.employee-cards figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 840px) {
+
+    header,
+    main,
+    footer {
+        width: 95%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
